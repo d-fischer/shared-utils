@@ -2,6 +2,8 @@ export { default as NonEnumerable } from './decorators/NonEnumerable';
 
 export { default as flatten } from './functions/array/flatten';
 
+export { default as resolveConfigValue, ResolvableValue } from './functions/config/resolveConfigValue';
+
 export { default as arrayToObject } from './functions/object/arrayToObject';
 export { default as entriesToObject } from './functions/object/entriesToObject';
 export { default as indexBy } from './functions/object/indexBy';
