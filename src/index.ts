@@ -6,6 +6,7 @@ export { default as resolveConfigValue, ResolvableValue } from './functions/conf
 
 export { default as arrayToObject } from './functions/object/arrayToObject';
 export { default as entriesToObject } from './functions/object/entriesToObject';
+export { default as forEachObjectEntry } from './functions/object/forEachObjectEntry';
 export { default as indexBy } from './functions/object/indexBy';
 export { default as mapObject } from './functions/object/mapObject';
 
