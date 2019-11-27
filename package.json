@@ -6,6 +6,7 @@
   "main": "lib",
   "module": "es",
   "types": "lib",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/d-fischer/shared-utils.git"
