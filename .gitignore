@@ -6,4 +6,5 @@ node_modules/
 *.tgz
 /.idea
 /lib
+/es
 package-lock.json
