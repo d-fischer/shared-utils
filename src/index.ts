@@ -9,6 +9,8 @@ export { default as entriesToObject } from './functions/object/entriesToObject';
 export { default as forEachObjectEntry } from './functions/object/forEachObjectEntry';
 export { default as indexBy } from './functions/object/indexBy';
 export { default as mapObject } from './functions/object/mapObject';
+export { default as omit } from './functions/object/omit';
+export { default as pick } from './functions/object/pick';
 
 export { default as padLeft } from './functions/string/padLeft';
 export { default as splitWithLimit } from './functions/string/splitWithLimit';
