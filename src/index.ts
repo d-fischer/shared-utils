@@ -4,6 +4,8 @@ export { default as flatten } from './functions/array/flatten';
 
 export { default as resolveConfigValue, ResolvableValue } from './functions/config/resolveConfigValue';
 
+export { default as match, eq } from './functions/match/match';
+
 export { default as arrayToObject } from './functions/object/arrayToObject';
 export { default as entriesToObject } from './functions/object/entriesToObject';
 export { default as forEachObjectEntry } from './functions/object/forEachObjectEntry';
