@@ -22,4 +22,4 @@ export { default as utf8Substring } from './functions/string/utf8Substring';
 export { ConstructedType, Constructor } from './types/constructor';
 export { default as MakeOptional } from './types/MakeOptional';
 export { KeyMapper, ObjMap, ObjMapPart } from './types/object';
-export { default as PickType } from './types/PickType';
+export { default as PickType, FilterFlags, AllowedNames } from './types/PickType';
