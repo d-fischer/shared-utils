@@ -4,8 +4,14 @@
   "description": "",
   "keywords": [],
   "main": "lib",
-  "module": "es",
   "types": "lib",
+  "module": "es",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.mjs"
+    }
+  },
   "sideEffects": false,
   "repository": {
     "type": "git",
@@ -23,8 +29,7 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "typescript": "~3.7.2"
+    "ts-hybrid-esm-build": "^0.2.1"
   },
   "files": [
     "LICENSE",
@@ -36,10 +41,8 @@
     "lint": "eslint --ext ts src",
     "prettier:check": "prettier --check 'src/**'",
     "prettier:fix": "prettier --write 'src/**'",
-    "build": "yarn run build:cjs && yarn run build:esm",
-    "build:cjs": "tsc",
-    "build:esm": "tsc --project tsconfig.esm.json",
-    "rebuild": "rimraf lib es && yarn run build"
+    "build": "ts-hybrid-esm-build",
+    "rebuild": "ts-hybrid-esm-build --clean"
   },
   "husky": {
     "hooks": {
