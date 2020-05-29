@@ -18,6 +18,7 @@
     "url": "https://github.com/d-fischer/shared-utils.git"
   },
   "author": "Daniel Fischer <daniel@d-fischer.dev>",
+  "funding": "https://github.com/sponsors/d-fischer",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^14.0.5",
