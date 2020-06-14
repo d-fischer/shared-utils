@@ -31,7 +31,7 @@
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
     "tsukuru": "^0.4.0",
-    "typescript": "~3.9.3"
+    "typescript": "~3.8.3"
   },
   "files": [
     "LICENSE",
