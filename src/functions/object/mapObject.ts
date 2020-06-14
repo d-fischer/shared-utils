@@ -1,6 +1,6 @@
 import { ObjMapPart } from '../../types/object';
 
-export default function mapObject<T, O, Obj = Record<string, T>>(
+export function mapObject<T, O, Obj = Record<string, T>>(
 	obj: Obj,
 	fn: (value: T, key: Extract<keyof Obj, string>) => O
 ) {

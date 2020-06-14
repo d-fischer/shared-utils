@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any,@typescript-eslint/naming-convention
-export default function NonEnumerable(target: any, key: string) {
+export function NonEnumerable(target: any, key: string) {
 	// first property defined in prototype, that's why we use getters/setters
 	// (otherwise assignment in object will override property in prototype)
 	Object.defineProperty(target, key, {

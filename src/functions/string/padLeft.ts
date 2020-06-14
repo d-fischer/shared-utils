@@ -1,4 +1,4 @@
-export default function padLeft(str: string | number, length: number, padding?: string) {
+export function padLeft(str: string | number, length: number, padding?: string) {
 	if (typeof str === 'number') {
 		str = str.toString();
 	}

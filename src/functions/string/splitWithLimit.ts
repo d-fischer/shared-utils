@@ -1,4 +1,4 @@
-export default function splitWithLimit(str: string, delim: string, count: number) {
+export function splitWithLimit(str: string, delim: string, count: number) {
 	const parts = str.split(delim);
 	if (parts.length <= count) {
 		return parts;

@@ -16,4 +16,4 @@ const match = <I, O>(x: I): MatchStep<I, O> => ({
 export const eq = <T>(x: T) => <T2 extends T>(y: T2) => x === y;
 match.eq = eq;
 
-export default match;
+export { match };

@@ -4,6 +4,4 @@ export type FilterFlags<Base, Condition> = {
 
 export type AllowedNames<Base, Condition> = FilterFlags<Base, Condition>[Extract<keyof Base, string>];
 
-type PickType<Base, Condition> = Record<AllowedNames<Base, Condition>, Condition>;
-
-export default PickType;
+export type PickType<Base, Condition> = Record<AllowedNames<Base, Condition>, Condition>;
