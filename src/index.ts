@@ -14,6 +14,8 @@ export { mapObject } from './functions/object/mapObject';
 export { omit } from './functions/object/omit';
 export { pick } from './functions/object/pick';
 
+export { delay } from './functions/promise/delay';
+
 export { padLeft } from './functions/string/padLeft';
 export { splitWithLimit } from './functions/string/splitWithLimit';
 export { utf8Length } from './functions/string/utf8Length';
