@@ -1,4 +1,4 @@
-export { NonEnumerable } from './decorators/NonEnumerable';
+export { Enumerable, NonEnumerable } from './decorators/Enumerable';
 
 export { flatten } from './functions/array/flatten';
 
