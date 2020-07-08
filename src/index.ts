@@ -4,6 +4,8 @@ export { flatten } from './functions/array/flatten';
 
 export { resolveConfigValue, ResolvableValue } from './functions/config/resolveConfigValue';
 
+export { deprecateClass } from './functions/deprecate/deprecateClass';
+
 export { match, eq } from './functions/match/match';
 
 export { arrayToObject } from './functions/object/arrayToObject';
