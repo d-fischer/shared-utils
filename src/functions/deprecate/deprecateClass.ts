@@ -8,7 +8,7 @@ export function deprecateClass<T extends Constructor>(Base: T, msg: string): T {
 		constructor(...args: any[]) {
 			if (!deprecateNoticeShown) {
 				// eslint-disable-next-line no-console
-				console.warn(`[deprecated] ${msg}`);
+				console.warn(msg);
 				deprecateNoticeShown = true;
 			}
 			super(...args);
