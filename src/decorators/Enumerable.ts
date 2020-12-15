@@ -8,7 +8,7 @@ export function Enumerable(enumerable = true): PropertyDecorator {
 				return;
 			},
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
-			set: function (this: any, val: any) {
+			set: function (this: any, val: unknown) {
 				// here we have a reference to the instance and can set property directly to it
 				Object.defineProperty(this, key, {
 					value: val,
@@ -23,6 +23,7 @@ export function Enumerable(enumerable = true): PropertyDecorator {
 }
 
 /** @deprecated use Enumerable(false) instead */
-export function NonEnumerable(target: Object, key: string) {
-	return Enumerable(false)(target, key);
+// eslint-disable-next-line @typescript-eslint/ban-types
+export function NonEnumerable(target: Object, key: string): void {
+	Enumerable(false)(target, key);
 }

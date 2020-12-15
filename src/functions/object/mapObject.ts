@@ -1,4 +1,4 @@
-import { ObjMap, ObjMapPart } from '../../types/object';
+import type { ObjMap, ObjMapPart } from '../../types/object';
 
 export function mapObject<T, O, Obj = Record<string, T>>(
 	obj: Obj,
@@ -8,5 +8,5 @@ export function mapObject<T, O, Obj = Record<string, T>>(
 		// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 		([key, value]: [Extract<keyof Obj, string>, T]) => ({ [key]: fn(value, key) } as ObjMapPart<Obj, O>)
 	);
-	return Object.assign({}, ...mapped);
+	return Object.assign({}, ...mapped) as ObjMap<Obj, O>;
 }

@@ -1,3 +1,3 @@
-export function utf8Length(str: string) {
+export function utf8Length(str: string): number {
 	return [...str].length;
 }
