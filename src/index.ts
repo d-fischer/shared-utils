@@ -1,4 +1,4 @@
-export { Enumerable, NonEnumerable } from './decorators/Enumerable';
+export { Enumerable } from './decorators/Enumerable';
 
 export { flatten } from './functions/array/flatten';
 
@@ -20,8 +20,7 @@ export { delay } from './functions/promise/delay';
 
 export { padLeft } from './functions/string/padLeft';
 export { splitWithLimit } from './functions/string/splitWithLimit';
-export { utf8Length } from './functions/string/utf8Length';
-export { utf8Substring } from './functions/string/utf8Substring';
+export { utf8Length, utf8Substring } from './functions/string/utf8';
 
 export { ConstructedType, Constructor } from './types/constructor';
 export { MakeOptional } from './types/MakeOptional';
