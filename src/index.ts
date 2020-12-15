@@ -25,5 +25,6 @@ export { utf8Substring } from './functions/string/utf8Substring';
 
 export { ConstructedType, Constructor } from './types/constructor';
 export { MakeOptional } from './types/MakeOptional';
+export { NoInfer } from './types/NoInfer';
 export { KeyMapper, ObjMap, ObjMapPart } from './types/object';
 export { PickType, FilterFlags, AllowedNames } from './types/PickType';
