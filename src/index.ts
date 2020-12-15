@@ -2,7 +2,8 @@ export { Enumerable } from './decorators/Enumerable';
 
 export { flatten } from './functions/array/flatten';
 
-export { resolveConfigValue, ResolvableValue } from './functions/config/resolveConfigValue';
+export { resolveConfigValue } from './functions/config/resolveConfigValue';
+export type { ResolvableValue } from './functions/config/resolveConfigValue';
 
 export { deprecateClass } from './functions/deprecate/deprecateClass';
 
@@ -22,8 +23,8 @@ export { padLeft } from './functions/string/padLeft';
 export { splitWithLimit } from './functions/string/splitWithLimit';
 export { utf8Length, utf8Substring } from './functions/string/utf8';
 
-export { ConstructedType, Constructor } from './types/constructor';
-export { MakeOptional } from './types/MakeOptional';
-export { NoInfer } from './types/NoInfer';
-export { KeyMapper, ObjMap, ObjMapPart } from './types/object';
-export { PickType, FilterFlags, AllowedNames } from './types/PickType';
+export type { ConstructedType, Constructor } from './types/constructor';
+export type { MakeOptional } from './types/MakeOptional';
+export type { NoInfer } from './types/NoInfer';
+export type { KeyMapper, ObjMap, ObjMapPart } from './types/object';
+export type { PickType, FilterFlags, AllowedNames } from './types/PickType';
