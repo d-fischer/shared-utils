@@ -21,9 +21,3 @@ export function Enumerable(enumerable = true): PropertyDecorator {
 		});
 	};
 }
-
-/** @deprecated use Enumerable(false) instead */
-// eslint-disable-next-line @typescript-eslint/ban-types
-export function NonEnumerable(target: Object, key: string): void {
-	Enumerable(false)(target, key);
-}
