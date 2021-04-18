@@ -17,6 +17,8 @@ export { mapObject } from './functions/object/mapObject';
 export { omit } from './functions/object/omit';
 export { pick } from './functions/object/pick';
 
+export { isNullish, mapOptional } from './functions/optional/mapOptional';
+
 export { delay } from './functions/promise/delay';
 
 export { padLeft } from './functions/string/padLeft';
