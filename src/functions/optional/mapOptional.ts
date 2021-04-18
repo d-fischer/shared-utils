@@ -2,12 +2,10 @@ export function isNullish<T>(value: T | null | undefined): value is null | undef
 	return value == null;
 }
 
-export function mapOptional<I, O>(value: I | null, cb: (val: I) => O): O | null;
-export function mapOptional<I, O>(value: I | undefined, cb: (val: I) => O): O | undefined;
-export function mapOptional<I, O>(value: I | null | undefined, cb: (val: I) => O): O | null | undefined {
-	if (isNullish(value)) {
-		return value;
-	}
+export function mapNullable<I, O>(value: I | null | undefined, cb: (val: I) => O): O | null {
+	return isNullish(value) ? null : cb(value);
+}
 
-	return cb(value);
+export function mapOptional<I, O>(value: I | null | undefined, cb: (val: I) => O): O | undefined {
+	return isNullish(value) ? undefined : cb(value);
 }
