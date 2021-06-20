@@ -1,6 +1,7 @@
 export { Enumerable } from './decorators/Enumerable';
 
 export { flatten } from './functions/array/flatten';
+export { partitionedFlatMap } from './functions/array/partitionedFlatMap';
 
 export { resolveConfigValue } from './functions/config/resolveConfigValue';
 export type { ResolvableValue } from './functions/config/resolveConfigValue';
