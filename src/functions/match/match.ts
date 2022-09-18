@@ -13,7 +13,10 @@ const match = <I, O>(x: I): MatchStep<I, O> => ({
 	otherwise: fn => fn(x)
 });
 
-export const eq = <T>(x: T) => <T2 extends T>(y: T2): boolean => x === y;
+export const eq =
+	<T>(x: T) =>
+	<T2 extends T>(y: T2): boolean =>
+		x === y;
 match.eq = eq;
 
 export { match };
