@@ -13,6 +13,7 @@ export { match, eq } from './functions/match/match';
 export { arrayToObject } from './functions/object/arrayToObject';
 export { entriesToObject } from './functions/object/entriesToObject';
 export { forEachObjectEntry } from './functions/object/forEachObjectEntry';
+export { groupBy } from './functions/object/groupBy';
 export { indexBy } from './functions/object/indexBy';
 export { mapObject } from './functions/object/mapObject';
 export { omit } from './functions/object/omit';
