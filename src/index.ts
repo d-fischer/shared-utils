@@ -10,6 +10,8 @@ export { deprecateClass } from './functions/deprecate/deprecateClass';
 
 export { match, eq } from './functions/match/match';
 
+export { fibWithLimit } from './functions/math/fib';
+
 export { arrayToObject } from './functions/object/arrayToObject';
 export { entriesToObject } from './functions/object/entriesToObject';
 export { forEachObjectEntry } from './functions/object/forEachObjectEntry';
