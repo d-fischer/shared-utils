@@ -3,8 +3,12 @@ export { Enumerable } from './decorators/Enumerable';
 export { flatten } from './functions/array/flatten';
 export { partitionedFlatMap } from './functions/array/partitionedFlatMap';
 
-export { resolveConfigValue } from './functions/config/resolveConfigValue';
-export type { ResolvableValue } from './functions/config/resolveConfigValue';
+export {
+	resolveConfigValue,
+	resolveConfigValueSync,
+	type ResolvableValue,
+	type ResolvableValueSync
+} from './functions/config/resolveConfigValue';
 
 export { deprecateClass } from './functions/deprecate/deprecateClass';
 
