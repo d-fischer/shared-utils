@@ -28,6 +28,7 @@ export { pick } from './functions/object/pick';
 export { isNullish, mapNullable, mapOptional } from './functions/optional/mapOptional';
 
 export { delay } from './functions/promise/delay';
+export { promiseWithResolvers, type PromiseWithResolvers } from './functions/promise/withResolvers';
 
 export { padLeft } from './functions/string/padLeft';
 export { splitWithLimit } from './functions/string/splitWithLimit';
