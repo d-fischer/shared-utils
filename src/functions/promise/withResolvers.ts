@@ -1,10 +1,10 @@
-export interface PromiseWithResolvers<T = unknown, E extends Error = Error> {
+export interface PromiseWithResolvers<T = void, E extends Error = Error> {
 	promise: Promise<T>;
 	resolve: (value: T) => void;
 	reject: (error: E) => void;
 }
 
-export function promiseWithResolvers<T = unknown, E extends Error = Error>(): PromiseWithResolvers<T, E> {
+export function promiseWithResolvers<T = void, E extends Error = Error>(): PromiseWithResolvers<T, E> {
 	// eslint-disable-next-line @typescript-eslint/init-declarations
 	let resolve!: (value: T) => void;
 	// eslint-disable-next-line @typescript-eslint/init-declarations
