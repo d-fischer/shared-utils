@@ -7,12 +7,12 @@ export function groupBy<T>(arr: T[], keyFn: Extract<keyof T, string> | KeyMapper
 		keyFn = ((value: T) => (value[key] as unknown as object).toString()) as KeyMapper<T>;
 	}
 
-	const result: Record<string, T[]> = {};
+	const result: Partial<Record<string, T[]>> = {};
 
 	for (const item of arr) {
 		const groupKey = keyFn(item);
 		(result[groupKey] ??= []).push(item);
 	}
 
-	return result;
+	return result as Record<string, T[]>;
 }
