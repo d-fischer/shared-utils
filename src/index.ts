@@ -1,6 +1,7 @@
 export { Enumerable } from './decorators/Enumerable';
 
 export { flatten } from './functions/array/flatten';
+export { immutableSplice } from './functions/array/immutableSplice';
 export { partitionedFlatMap } from './functions/array/partitionedFlatMap';
 
 export {
